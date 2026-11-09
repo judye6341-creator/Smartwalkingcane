@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Cane | Sanad</title>
+    <link rel="stylesheet" href="customize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="trial.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> Sanad
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Our Solutions</a>
+                <a href="customize.html" class="active">Customize</a>
+                <a href="index.html">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="index.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Customization Section -->
+    <section class="customize-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Build Your Perfect Cane</h2>
+                <p>Select the base model and add the sensors that fit your lifestyle.</p>
+            </div>
+
+            <div class="customize-layout">
+                <!-- Left Side: Options -->
+                <div class="customize-options">
+                    
+                    <!-- Base Model -->
+                    <div class="option-group">
+                        <h3>1. Choose Base Model</h3>
+                        <div class="radio-cards">
+                            <label class="radio-card">
+                                <input type="radio" name="base_model" value="199" data-name="Standard Frame" checked>
+                                <div class="radio-content">
+                                    <h4>Standard Frame</h4>
+                                    <p>Lightweight aluminum</p>
+                                    <span class="price">$199</span>
+                                </div>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="base_model" value="249" data-name="Premium Frame">
+                                <div class="radio-content">
+                                    <h4>Premium Frame</h4>
+                                    <p>Carbon fiber, ergonomic grip</p>
+                                    <span class="price">$249</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Sensors -->
+                    <div class="option-group">
+                        <h3>2. Add Smart Sensors</h3>
+                        <div class="checkbox-list">
+                            
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="sensor" value="49" data-name="Smart Fall Detection" checked>
+                                <div class="checkbox-content">
+                                    <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div>
+                                        <h4>Smart Fall Detection</h4>
+                                        <p>Alerts emergency contacts if a fall occurs.</p>
+                                    </div>
+                                    <span class="price">+$49</span>
+                                </div>
+                            </label>
+
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="sensor" value="59" data-name="Heart Rate Monitor">
+                                <div class="checkbox-content">
+                                    <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <div>
+                                        <h4>Heart Rate Monitor</h4>
+                                        <p>Continuous real-time heart rate tracking.</p>
+                                    </div>
+                                    <span class="price">+$59</span>
+                                </div>
+                            </label>
+
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="sensor" value="79" data-name="GPS Tracking">
+                                <div class="checkbox-content">
+                                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <h4>GPS Tracking</h4>
+                                        <p>Live location sharing with family members.</p>
+                                    </div>
+                                    <span class="price">+$79</span>
+                                </div>
+                            </label>
+
+                            <label class="checkbox-card">
+                                <input type="checkbox" name="sensor" value="39" data-name="SOS Emergency Button">
+                                <div class="checkbox-content">
+                                    <div class="icon-box"><i class="fa-solid fa-bell"></i></div>
+                                    <div>
+                                        <h4>SOS Emergency Button</h4>
+                                        <p>One-click alert to emergency services.</p>
+                                    </div>
+                                    <span class="price">+$39</span>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Summary -->
+                <div class="customize-summary">
+                    <div class="summary-card sticky">
+                        <h3>Your Custom Cane</h3>
+                        <div class="summary-image">
+                            <img src="11.jpg" alt="Custom Cane">
+                        </div>
+                        
+                        <div class="summary-items" id="summary-items">
+                            <!-- Items will be injected here via JS -->
+                        </div>
+                        
+                        <div class="summary-total">
+                            <span>Total Price:</span>
+                            <h3 id="total-price">$248</h3>
+                        </div>
+                        
+                        <button class="btn btn-primary full-width" id="order-btn">
+                            Order Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <p class="secure-text"><i class="fa-solid fa-lock"></i> Secure checkout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="customize.js"></script>
+</body>
+</html>
